@@ -1,0 +1,167 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Update patient</title>
+<!--google font for sofia-->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <!--bootstrap CDN-->
+    <!-- CSS only -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- JS, Popper.js, and jQuery -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <!---->
+        <title>Hospital Management</title>
+		<link rel = "stylesheet" href = "CSS/styles.css" type = "text/css" />
+        
+		
+       
+ </head>
+ <style>
+ body{
+ background-color: #000;
+	/* height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(Images/bg5.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative; */	
+	}
+	.btn{
+	padding: 12px 20px;
+	border: 0;
+	background: #AF002A;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100%;
+	font-weight: bold;
+	}
+	
+	.btn1{
+	padding: 12px 20px;
+	border: 0;
+	color: #fff;
+	background: #AF002A;
+	font-weight: bold;
+	cursor: pointer;
+	width: 30%;
+	font-weight: bold;
+	}
+	.btn2{
+	padding: 12px 20px;
+	border: 0;
+	color: #fff;
+	background: #AF002A;
+	font-weight: bold;
+	cursor: pointer;
+	width: 10%;
+	font-weight: bold;}
+	
+	.btn:hover, .btn1:hover, .btn2:hover
+	{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #ffff;
+	color: #000;
+	font-weight: bold;
+	
+}
+</style>
+ <body>
+ 
+<div class="row">  
+	
+  <div class="col-md-12">
+  <nav class="navbar" style="background-color:#AF002A; background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;">
+ <br>
+<br>
+ 
+</nav>
+</div>
+</div>
+  <div class="container">
+ <br>
+ 
+ <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(Images/hospital2.jpeg);background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;">
+  <div class="container">
+    		<center>
+		  	<h1 class="display-4" style="font-family: Times New Roman, Times, serif; color: #AF002A; font-weight: bold; background-size: cover;; background-color:#fff;" ><b> Hospital Management System </b></h1>
+		  	<h4 class="lead" style="color:#AF002A; background-color: #fff;font-weight: bold;"><b>CRUD Based on JAVA EE and MYSQL</b></h4>
+		</center>
+  </div>
+</div>
+
+
+<br><center><a href="index.html"><button class="btn1" href="index.jsp" >Back To Home</button></a></center><br>
+<br>
+<div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(Images/edit.jpg);background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;">
+  <div class="container">
+  <div class="container">
+  <div class="container">
+  <center><h2 class="card-title" style="font-weight: bold;color: #AF002A;">Edit patient!!</h2>
+  <form action="update" name="" method="post">
+  <br>
+	<label style="padding: 12px 12px 12px 0;display: inline-block; font-weight: bold;color: #AF002A;font-size:30px;">Patient Id: <input style="width: 50%; padding: 5px;border: 1px solid #ccc; border-radius: 4px; resize: vertical;"type="number" name="patient_id" ></label>
+	<!--
+	<br>
+	<label>First Name<input type="text" name="first_name" ></label>
+	<br>
+	 <label>First Name<input type="text" name="" required></label>
+	<br>
+	<label>Last Name<input type="text" name="" required></label>
+	<br> 
+	<label>phone number<input type="phone" name="" required></label>
+  <br>
+	<label>Street Address<input type="text" name="" required></label>
+  <br>
+	<label>city<input type="text" name="" required></label>
+	<br>
+	<label>Last Name<input type="text" name="" required></label>
+	<br><br>
+  <label>Department
+					<select class="form-control" required>
+										<option selected="selected" disabled >none</option>
+										<option value="Dental">Dental</option>
+										<option value="Cardio">Cardio</option>
+										<option value="opd">O.P.D</option>
+										<option value="Physiology">Physiology</option>
+										<option value="Surgery">Surgery</option>
+										<option value="Artho">Artho</option>
+									</select></label>
+			<br> -->
+			<br>
+				<input type="submit" class="btn2" value="Save">
+  
+  </div>
+  </div></div>
+  </div>
+  <br>
+<center>
+  <div>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <a href="update_patient.html"><button type="button"   class="btn btn-secondary">edit</button></a>&nbsp;&nbsp;
+  <a href="view_patient.html"><button type="button"  class="btn btn-secondary">view</button></a>&nbsp;&nbsp;
+  <a href="delete_patient.html"><button type="button"  class="btn btn-secondary">delete</button></a>
+</div>
+</div>
+</center>
+<br><br>
+
+ </body>
+ </html>

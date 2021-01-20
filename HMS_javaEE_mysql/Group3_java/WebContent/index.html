@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <!--google font for sofia-->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  
+
+    <!--bootstrap CDN-->
+    <!-- CSS only -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- JS, Popper.js, and jQuery -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!---->
+   <script>
+		$(document).ready(function(){
+			$(".card").mouseover(function(){
+			$(this).animate({
+      
+				  height: '+=20px',
+				  width: '+=20px'
+				});
+				});
+				 $(".card").mouseout(function(){
+			$(this).animate({
+			  
+						  height: '-=20px',
+						  width: '-=20px'
+						});
+						
+			});		
+	});				
+		</script>
+        <title>Hospital Management</title>
+		<link rel = "stylesheet" href = "CSS/styles.css" type = "text/css" />
+        
+		
+       
+ </head>
+ <style>
+ body{
+ background-color: #000;
+	/* height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(Images/bg5.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative; */	
+	}
+	.btn{
+	padding: 12px 20px;
+	border: 0;
+	background: #AF002A;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100%;
+	font-weight: bold;
+	}
+	
+	.btn1{
+	padding: 12px 20px;
+	border: 0;
+	color: #fff;
+	background: #AF002A;
+	font-weight: bold;
+	cursor: pointer;
+	width: 30%;
+	font-weight: bold;
+	}
+	.btn2{
+	padding: 12px 20px;
+	border: 0;
+	color: #fff;
+	background: #AF002A;
+	font-weight: bold;
+	cursor: pointer;
+	width: 30%;
+	font-weight: bold;}
+	
+	.btn:hover, .btn1:hover, .btn2:hover
+	{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #ffff;
+	color: #000;
+	font-weight: bold;
+	
+}
+</style>
+ <body>
+ 
+<div class="row">  
+	
+  <div class="col-md-12">
+  <nav class="navbar" style="background-color:#AF002A; background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;">
+ <br>
+
+<br>
+ 
+</nav>
+</div>
+</div>
+  <div class="container">
+ <br>
+ 
+ <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(Images/hospital2.jpeg);background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;">
+  <div class="container">
+    		<center>
+		  	<h1 class="display-4" style="font-family: Times New Roman, Times, serif; color: #AF002A; font-weight: bold; background-size: cover;; background-color:#fff;" ><b> Hospital Management System </b></h1>
+		  	<h4 class="lead" style="color:#AF002A; background-color: #fff;font-weight: bold;"><b>CRUD Based on JAVA EE and MYSQL</b></h4>
+		</center>
+  </div>
+</div>
+
+<br>
+
+<div class="row">  
+	
+  <div class="col-md-5">
+  <div class="card" style="width: 18rem;">
+  <img src="Images\bg1.jpg" class="card-img-top" alt="bg1">
+  <div class="card-body">
+    <h5 class="card-title">new patient</h5>
+    <p class="card-text">enter new patient here</p>
+    <a href="new_patient.html" class="btn btn-primary">Enter New Patient</a>
+  </div>
+</div>
+  
+	</div>
+	<div class="col-md-2">
+	
+	
+	</div>
+	<div class="col-md-5">
+	<div class="card" style="width: 18rem;">
+  <img src="Images\bg2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">edit patient</h5>
+    <p class="card-text">edit patient here</p>
+    <a href="update_patient.html" class="btn btn-primary">update patient</a>
+  </div>
+</div>
+	
+</div>
+
+</div>
+<br><br>
+
+<div class="row">  
+	
+  <div class="col-md-5">
+  <div class="card" style="width: 18rem;">
+  <img src="Images\bg3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">view Patient</h5>
+    <p class="card-text">view patient here</p>
+    <a href="view_patient.html" class="btn btn-primary">View Patient</a>
+  </div>
+</div>
+  
+	</div>
+	<div class="col-md-2">
+	
+</div>
+	
+	
+	<div class="col-md-5">
+	<div class="card" style="width: 18rem;">
+  <img src="Images\bg4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">delete patient</h5>
+    <p class="card-text">delete patient here</p>
+    <a href="delete_patient.html" class="btn btn-primary">delete patient</a>
+  </div>
+</div>
+	
+	</div>
+
+</div>
+<br><br>
+
+ </body>
+ </html>
